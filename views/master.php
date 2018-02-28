@@ -3,7 +3,7 @@
 <?php include("head.php");?>
     <body>
       <!-- start of alpha/beta banner -->
-      <?php include("navbar.php")?>
+      <?php include("navbar.php");?>
       <!-- content from other pages in loaded here -->
       <div id="main" class="main-content">
           <?php 
