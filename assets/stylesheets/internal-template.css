@@ -641,7 +641,7 @@ button:focus {
 
 /* Global header bar */
 #global-header-bar {
-  height: 10px;
+  height: 6px;
   background-color: #009536; }
 
 /* Global cookie message */
@@ -683,7 +683,8 @@ button:focus {
   #footer a {
     color: #62a70f; }
     #footer a:hover {
-      background-color: #ffbf47; }
+      color: #7cd312
+    }
   #footer h2 {
     font-family: "nta", Helvetica, sans-serif;
     font-weight: 400;
