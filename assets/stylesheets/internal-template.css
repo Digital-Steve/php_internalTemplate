@@ -1,4 +1,13 @@
 /* govuk_frontend_toolkit includes */
+.form-hint{
+  margin-top: 0;
+  padding-bottom:0;
+  font-size: 19px;
+  line-height: 1.31579;
+  display: block;
+  color: #6f777b;
+  font-weight: normal;
+}
 .button {
   color: #fff;
   background-color: #00823b;
@@ -668,10 +677,20 @@ button:focus {
         line-height: 1.25; } }
 
 /* Global footer */
+.footerHeading, .footerHR{
+  color: #62a70f;
+}
+.footerHR{
+  width: 50%; 
+  float: left; 
+  border-color: #62a70f; 
+  margin-bottom: 1.5em; 
+}
 #footer {
+  border-top: 4px solid #009536; 
   background-color: #424242;
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
   #footer .footer-wrapper {
@@ -692,7 +711,7 @@ button:focus {
     font-size: 18px;
     line-height: 1.2;
     font-weight: bold;
-    color: #0b0c0c;
+    color: #62a70f;
     margin: 0; }
     @media (min-width: 641px) {
       #footer h2 {
