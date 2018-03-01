@@ -582,7 +582,7 @@ button:focus {
         float: left;
         width: 50%;
         padding: 3px 0;
-        border-bottom: 1px solid #2e3133; }
+        border-bottom: 1px solid #424242; }
         @media (min-width: 769px) {
           #global-header .header-proposition #proposition-link li,
           #global-header .header-proposition #proposition-links li {
@@ -669,13 +669,13 @@ button:focus {
 
 /* Global footer */
 #footer {
-  background-color: #222c27;
+  background-color: #424242;
   bottom: 0;
   position: absolute;
   width: 100%;
 }
   #footer .footer-wrapper {
-    background-color: #222c27;
+    background-color: #424242;
     padding-top: 20px; }
     @media (min-width: 641px) {
       #footer .footer-wrapper {
