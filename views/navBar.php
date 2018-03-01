@@ -2,7 +2,7 @@
   <div class="header-wrapper">
     <div class="header-global">
       <div class="header-logo">
-        <a href="#" title="Go to the GOV.UK homepage" id="logo" class="content">
+        <a href="?home" title="Back to the start" id="logo" class="content">
           <img src="/assets/images/DfTDigitalService_Full.jpg" height="62" width="100" alt="DfT" style="margin-right: 0; padding-right:1px;">
         </a>
       </div>

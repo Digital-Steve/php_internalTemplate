@@ -29,6 +29,10 @@
         case 'contact':
             require 'views/master.php';
             break;
+        // help page
+        case 'help':
+            require 'views/master.php';
+            break;
         // handle any thing that is entered in the url which isn't above
         default:
             header('HTTP/1.0 404 Not Found');
