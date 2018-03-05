@@ -15,7 +15,7 @@
             $db = new db();
             //echo "saveuser <br/>";
             $sqlString = "INSERT INTO user (username, email, isAdmin, rfd) VALUES ('" . $this->username . "'," . "'" . $this->useremail . "','" . $this->admin . "','" . $this->rdf . "')";
-            $db->newConn($sqlString);
+            $db->save($sqlString);
             //$sqlString = "INSERT INTO user (username, email, isAdmin, rfd) VALUES ('" . $this->username . "'," . "'" . $this->useremail . "'," . $this->admin . $this->rdf . ")";
             //$sqlString = "INSERT INTO user (username, useremail, isAdmin, rfd) VALUES ('John', 'john@example.com'', 'john@example.com', '1', '1')"; 
             //echo $sqlString . "<br/>";

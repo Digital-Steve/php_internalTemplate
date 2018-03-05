@@ -1,17 +1,34 @@
 <?php 
     class db 
     {
-        private $servername = "localhost";
+        // db values for connecting to MAMP on local host
+        /*private $servername = "localhost";
         private $username = "root";
         private $password = "root";
-        private $dbname = "proc";
+        private $dbname = "proc";*/
 
-        public function newConn($sqlstring)
+        // db valuse for gcp 
+        private $servername = "mysql:dbname=testProc;unix_socket=/cloudsql/dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql";
+        private $username = "testProc";
+        private $password = "dft-ddt-sb-steveneman-testProcUser-0192837465";
+        private $dbname = "testProc";
+
+        public function save($sqlstring)
+        {
+            // create new connection
+            $conn = $this->newConn();
+            // execute query with new connection
+            $this->executeSQL($sqlstring, $conn);
+            // close connection
+            $this->closeConnection($conn);
+        }
+
+        private function newConn()
         {
             try
             {
                 $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);  
-                $this->executeSQL($sqlstring, $conn);
+                return $conn;
             }
             catch(mysqli_sql_exception $e)
             {
@@ -26,7 +43,6 @@
             if ($conn->query($sqlstring) === TRUE) 
             {
                 echo "New record created successfully";
-                $this->closeConnection($conn);
             } 
             else 
             {
