@@ -8,8 +8,9 @@
         private $dbname = "proc";*/
 
         // db valuse for gcp 
-        private $servername = "mysql:dbname=testProc;unix_socket=/cloudsql/dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql";
-        private $username = "testProc";
+        
+        private $servername = "mysql:unix_socket=/cloudsql/dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql;";
+        private $username = "testProcUser";
         private $password = "dft-ddt-sb-steveneman-testProcUser-0192837465";
         private $dbname = "testProc";
 
