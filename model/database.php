@@ -34,6 +34,7 @@
             catch(mysqli_sql_exception $e)
             {
                 // need to think about error handling
+                echo "couldn't connect";
                 throw $e;
             }
         }
