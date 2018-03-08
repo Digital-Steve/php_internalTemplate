@@ -31,6 +31,10 @@
             // grab URL and pass it to the browser
             curl_exec($ch);
 
+            $response = json_decode(curl_exec($ch), true);
+
+            echo($response);
+
             // close cURL resource, and free up system resources
             curl_close($ch);
        }
