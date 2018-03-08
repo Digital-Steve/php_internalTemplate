@@ -10,8 +10,8 @@
         // db valuse for gcp 
         
         private $servername = "35.205.41.120";
-        private $username = "root";
-        private $password = "Gatrok241114";
+        private $username = "testProcUser ";
+        private $password = "testProcUser";
         private $dbname = "testProc";
 
         public function save($sqlstring)

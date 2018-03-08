@@ -14,5 +14,5 @@
     ($_POST['admin'] == "1" ? $user->admin = 1 : $user->admin = 0);
 
     //call the save user method
-    $user->saveuser();
+    $user->callSaveUser();
 ?>
