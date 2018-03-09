@@ -4,13 +4,13 @@ env: flex
 runtime_config:
   document_root: .
 
-#env_variables:
+env_variables:
   # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
   # values obtained when configuring your Cloud SQL instance.
- # MYSQL_USER: testProc
- # MYSQL_PASSWORD: dft-ddt-sb-steveneman-testProcUser-0192837465
- # MYSQL_DSN: mysql:unix_socket=/cloudsql/dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql;dbname=testProc
-
+  MYSQL_USER: root
+  MYSQL_PASSWORD: root
+  MYSQL_DSN: dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql
+  MYSQL_DATABASE: testProc
   # Use the connection name obtained when configuring your Cloud SQL instance.
 #beta_settings:
  #   cloud_sql_instances: "dft-ddt-sb-stevenewman:europe-west1:sandbox-mysql"
