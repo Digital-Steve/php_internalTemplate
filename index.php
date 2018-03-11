@@ -11,6 +11,13 @@
 
     $_SESSION['whichPage']=$uri[0];
 
+    $requestIP = $_SERVER['REMOTE_ADDR'];
+    $HTTPX = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+    echo('REMOTE_ADDR = ' . $requestIP . '<br/>');
+    echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX);
+    exit; 
+
     // switch statement based on the value of the uri grabbed above.
     switch ($uri[0]) {
         // Call the home page with no page name in the url
