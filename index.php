@@ -15,9 +15,10 @@
     $HTTPX = $_SERVER['HTTP_X_FORWARDED_FOR'];
     $HTTP_CLIENT = $_SERVER['HTTP_CLIENT_IP'];
 
-    echo('REMOTE_ADDR = ' . $requestIP . '<br/>');
-    echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX . '<br/>');
-    echo('HTTP_CLIENT_IP = ' . $HTTP_CLIENT);
+    //echo('REMOTE_ADDR = ' . $requestIP . '<br/>');
+    //echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX . '<br/>');
+    //echo('HTTP_CLIENT_IP = ' . $HTTP_CLIENT);
+    echo get_current_user();
     exit; 
 
     // switch statement based on the value of the uri grabbed above.
