@@ -13,9 +13,11 @@
 
     $requestIP = $_SERVER['REMOTE_ADDR'];
     $HTTPX = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    $HTTP_CLIENT = $_SERVER['HTTP_CLIENT_IP'];
 
     echo('REMOTE_ADDR = ' . $requestIP . '<br/>');
-    echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX);
+    echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX . '<br/>');
+    echo('HTTP_CLIENT_IP = ' . $HTTP_CLIENT);
     exit; 
 
     // switch statement based on the value of the uri grabbed above.
