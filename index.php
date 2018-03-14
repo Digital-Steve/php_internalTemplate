@@ -18,8 +18,8 @@
     //echo('REMOTE_ADDR = ' . $requestIP . '<br/>');
     //echo('HTTP_X_FORWARDED_FOR = ' . $HTTPX . '<br/>');
     //echo('HTTP_CLIENT_IP = ' . $HTTP_CLIENT);
-    echo get_current_user();
-    exit; 
+    //echo get_current_user();
+    //exit; 
 
     // switch statement based on the value of the uri grabbed above.
     switch ($uri[0]) {

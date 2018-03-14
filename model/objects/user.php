@@ -27,7 +27,7 @@
 
            // assign insert string
            $environmentVariables->SQLString = "INSERT INTO user (username, email, isAdmin, rfd) VALUES ('" . $this->username . "'," . "'" . $this->useremail . "'," . $this->admin . ", 0 )";
-
+           
            $data_string = json_encode($environmentVariables);
 
            //echo($data_string );
